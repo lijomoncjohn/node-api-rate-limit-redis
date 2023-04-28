@@ -42,7 +42,7 @@ const ratelimiter = async (req, res, next) => {
 			res
 				.status(429)
 				.send(
-					`You have exceeded the ${ratelimit.maxRequests} requests in ${ratelimit.maxWindowSize} hrs limit!`
+					`You have exceeded the ${ratelimit.maxRequests} requests in ${ratelimit.maxWindowSize} secs limit!`
 				);
 		} else {
 			let lastRequestLog = parseData[parseData.length - 1];

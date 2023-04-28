@@ -11,9 +11,9 @@ const redis = {
 };
 
 const ratelimit = {
-	maxWindowSize: process.env.RATE_LIMIT_WINDOW_SIZE_HOURS || 1,
+	maxWindowSize: process.env.RATE_LIMIT_WINDOW_SIZE_HOURS || 60,
 	maxRequests: process.env.RATE_LIMIT_WINDOW_MAX_REQUESTS || 20,
-	interval: process.env.RATE_LIMIT_WINDOW_INTERVAL || 1,
+	interval: process.env.RATE_LIMIT_WINDOW_INTERVAL || 60,
 };
 
 module.exports = {
