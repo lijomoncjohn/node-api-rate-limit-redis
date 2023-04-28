@@ -46,7 +46,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "plain",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "X-Powered-By",
@@ -58,19 +58,19 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/plain; charset=utf-8"
+							"value": "application/json; charset=utf-8"
 						},
 						{
 							"key": "Content-Length",
-							"value": "2"
+							"value": "2113"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\""
+							"value": "W/\"841-1oCBb/W9B/ukAcZKqaTep3pBc5U\""
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 28 Apr 2023 08:17:36 GMT"
+							"value": "Fri, 28 Apr 2023 09:29:24 GMT"
 						},
 						{
 							"key": "Connection",
@@ -82,10 +82,10 @@
 						}
 					],
 					"cookie": [],
-					"body": "OK"
+					"body": "{\n    \"status\": true,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"Title 1\",\n            \"content\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\n            \"createdAt\": \"2023-04-28T08:56:19.221Z\",\n            \"updatedAt\": \"2023-04-28T08:56:19.221Z\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Title 2\",\n            \"content\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\n            \"createdAt\": \"2023-04-28T08:56:19.221Z\",\n            \"updatedAt\": \"2023-04-28T08:56:19.221Z\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Title 3\",\n            \"content\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\n            \"createdAt\": \"2023-04-28T08:56:19.221Z\",\n            \"updatedAt\": \"2023-04-28T08:56:19.221Z\"\n        }\n    ]\n}"
 				},
 				{
-					"name": "Get blogs - max request limit exceeded",
+					"name": "Get blogs - limit exceeded",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -105,7 +105,7 @@
 					},
 					"status": "Too Many Requests",
 					"code": 429,
-					"_postman_previewlanguage": "html",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "X-Powered-By",
@@ -117,19 +117,19 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/html; charset=utf-8"
+							"value": "application/json; charset=utf-8"
 						},
 						{
 							"key": "Content-Length",
-							"value": "50"
+							"value": "46"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"32-XJ9aZhaZ8gFg9323H3eF5ffCgk4\""
+							"value": "W/\"2e-3g+phTnRw6Zx4KNM9hyvDBHQvYw\""
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 28 Apr 2023 08:21:33 GMT"
+							"value": "Fri, 28 Apr 2023 09:29:42 GMT"
 						},
 						{
 							"key": "Connection",
@@ -141,7 +141,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "You have exceeded the 20 requests in 60 hrs limit!"
+					"body": "{\n    \"status\": false,\n    \"message\": \"Too many requests\"\n}"
 				}
 			]
 		}
