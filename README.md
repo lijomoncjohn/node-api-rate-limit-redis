@@ -10,6 +10,26 @@ Install dependencies with npm
   npm install
 ```
 
+## Init database
+
+Craete database (Postgres)
+
+```bash
+  npm run db:create
+```
+
+Run migrations
+
+```bash
+  npm run db:migrate
+```
+
+Seed data
+
+```bash
+  npm run db:seed
+```
+
 ## Run the application
 
 To run tests, run the following command
