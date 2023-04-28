@@ -1,6 +1,7 @@
 const Redis = require('ioredis');
 const moment = require('moment');
 const { redis, ratelimit } = require('../config');
+const { tooManyRequests } = require('../utils/response');
 
 const redisClient = new Redis({
 	host: redis.host,
@@ -39,11 +40,7 @@ const ratelimiter = async (req, res, next) => {
 		);
 		// Check if requests exceed max allowed requests
 		if (totalWindowRequestsCount >= ratelimit.maxRequests) {
-			res
-				.status(429)
-				.send(
-					`You have exceeded the ${ratelimit.maxRequests} requests in ${ratelimit.maxWindowSize} secs limit!`
-				);
+			tooManyRequests(res, 'Too many requests');
 		} else {
 			let lastRequestLog = parseData[parseData.length - 1];
 			console.log('lastRequestLog', lastRequestLog);
